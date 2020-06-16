@@ -19,3 +19,5 @@ We would
 1. Use the default `job["name"]`
 2. Append `python{python_version}` to `task["name"]` when yielding a python-specific task
 3. Use the job transform, or later similar transform, to set the label to `{kind}-{task["name"]}`
+
+There are exceptions to this rule currently, e.g. `build-docker-image-*` from the `docker-image` kind. We should deprecate these and standardize at some point.
